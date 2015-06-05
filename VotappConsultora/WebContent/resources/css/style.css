@@ -1,0 +1,114 @@
+/* @ Efecto scroll deslizante a pantalla completa usando solo css
+@ author Agust�n Baraza (contacto@nosolocss.com)
+@ Copyright 2014 nosolocss.com. All rights reserved
+@ http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+@ link http://www.nosolocss.com  */
+
+html{		
+	width:100%;
+	height:100%;
+		
+}
+
+body{
+	margin:0;
+	width:100%;
+	height:100%;
+	font-family: 'Bangers', cursive;
+	background-color:#FA5858;
+}
+
+a{
+	text-decoration:none;
+	color:#111;
+
+
+}
+
+img{
+	position:absolute;
+	top:50%;
+	margin-top:-150px;
+	left:50%;
+	margin-left:-210px;
+}
+
+.panel{
+	position:relative;
+	width:100%;
+	height:0;
+	overflow:hidden;
+	-webkit-transition: all 700ms ease-out;
+	-moz-transition:all 700ms ease-out;
+	transition: all 700ms ease-out;
+}
+
+.panel p{
+	position:absolute;
+	font-size:55px;
+	width:100%;
+	text-align:center;
+	top:2%;
+	color:#111;
+	z-index:9999;
+}
+
+.panel p a{
+	font-size:55px;
+	text-decoration:none;
+	color:#111;
+}
+.panel p a:hover{
+
+	color:#01DF01;
+
+}
+
+
+.next{
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	text-align:center;
+	font-size:35px;
+
+}
+
+.next:active{
+	font-size:32px;
+}
+#inicio{
+	position:absolute;
+	width:100%;
+	height:100%;
+	font-size:70px;
+	overflow:hidden;
+}
+#inicio p{
+	font-size:100px;
+	width:100%;
+	text-align:center;
+	line-height:20px;
+}
+#inicio p ~ p{
+	font-size:50px;
+
+}
+#inicio a:hover{
+	color:#D7DF01;
+}
+#escena1{
+	background-color:#D7DF01;	
+}
+
+#escena2{
+	background-color:#00BFFF;	
+}
+
+#escena3{
+	background-color:#FF8000;	
+}
+
+.panel:target{
+	height:100%;
+}

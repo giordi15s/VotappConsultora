@@ -1,0 +1,28 @@
+ <div class="container-fluid" ng-show="mostrarFormulario()">
+     
+      <form class="form">
+       
+       
+        	<div class="form-group col-xs-6">
+				<h3> Administrador de Consultora </h3>
+	        	<input  style="margin-bottom: 10px;" class="form-control" placeholder="Usuario" ng-model="consultora.nombreAdminConsultora" required autofocus>
+	        	<input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" ng-model="consultora.passAdminConsultora" required>
+			</div>
+			
+			
+	
+			<div class="form-group col-xs-6">
+				<h3> Datos de Consultora </h3>
+				<input type="text" id="inputNombre" style="margin-bottom: 10px;" class="form-control" placeholder="Nombre" required  ng-model="consultora.nombre">
+	            <input type="text" id="inputDescripcion" class="form-control" placeholder="Descripcion" required  ng-model="consultora.descripcion">
+        	        	<button class="btn btn-lg btn-info btn-block" style="margin-top: 10px;" ng-click="crearUsuario(consultora)" >Crear</button>
+        	
+        	</div>
+       
+        
+        
+     
+      </form>
+       
+
+    </div>
